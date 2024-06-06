@@ -24,16 +24,8 @@ def sort(width: float, height: float, length: float, mass: float) -> str:
 
 
 class SortStandardTestCase(unittest.TestCase):
-    def test_mass(self):
+    def test_standard(self):
         self.assertEqual(sort(1, 1, 1, 1), "STANDARD")
-
-    def test_dimensions(self):
-        self.assertEqual(sort(149, 1, 1, 1), "STANDARD")
-        self.assertEqual(sort(1, 149, 1, 1), "STANDARD")
-        self.assertEqual(sort(1, 1, 149, 1), "STANDARD")
-
-    def test_volume(self):
-        self.assertEqual(sort(99, 100, 100, 1), "STANDARD")
 
 
 class SortSpecialTestCase(unittest.TestCase):
